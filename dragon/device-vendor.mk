@@ -21,19 +21,17 @@ PRODUCT_PACKAGES += \
     DragonKeyboardFirmwareUpdater \
     HotwordEnrollmentOKGoogleRT5677
 
-# aptX
-PRODUCT_PACKAGES += \
-    vendor/google/dragon/proprietary/product/lib64/libaptX_encoder.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libaptX_encoder.so \
-    vendor/google/dragon/proprietary/product/lib64/libaptXHD_encoder.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libaptXHD_encoder.so
-
 # Nvidia blob(s) necessary for Dragon hardware
 PRODUCT_COPY_FILES := \
-    vendor/nvidia/dragon/proprietary/etc/permissions/privapp-permissions-google.xml:system/etc/permissions/privapp-permissions-google.xml \
-    vendor/google/dragon/proprietary/etc/permissions/privapp-permissions-dragon.xml:system/etc/permissions/privapp-permissions-dragon.xml \
-    vendor/nvidia/dragon/proprietary/etc/permissions/privapp-permissions-platform.xml:system/etc/permissions/privapp-permissions-platform.xml \
-    vendor/nvidia/dragon/proprietary/etc/sysconfig/nexus.xml:system/etc/sysconfig/nexus.xml \
-    vendor/nvidia/dragon/proprietary/lib/libkeymaster_staging.so:system/lib/libkeymaster_staging.so \
-    vendor/nvidia/dragon/proprietary/lib64/libkeymaster_staging.so:system/lib64/libkeymaster_staging.so \
+    vendor/nvidia/dragon/proprietary/etc/permissions/privapp-permissions-dragon.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-dragon.xml \
+    vendor/nvidia/dragon/proprietary/etc/permissions/privapp-permissions-google.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-google.xml \
+    vendor/nvidia/dragon/proprietary/etc/permissions/privapp-permissions-platform.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-platform.xml \
+    vendor/nvidia/dragon/proprietary/etc/sysconfig/nexus.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/nexus.xml \
+    vendor/nvidia/dragon/proprietary/lib/libkeymaster_staging.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libkeymaster_staging.so \
+    vendor/nvidia/dragon/proprietary/lib64/libkeymaster_staging.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libkeymaster_staging.so \
+    vendor/nvidia/dragon/proprietary/product/etc/permissions/privapp-permissions-pixel.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-pixel.xml \
+    vendor/nvidia/dragon/proprietary/product/lib64/libaptX_encoder.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libaptX_encoder.so \
+    vendor/nvidia/dragon/proprietary/product/lib64/libaptXHD_encoder.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libaptXHD_encoder.so \
     vendor/nvidia/dragon/proprietary/vendor/firmware/cros-pd/dingdong_v1.7.317-b0bb7c9.bin:root/vendor/firmware/cros-pd/dingdong_v1.7.317-b0bb7c9.bin \
     vendor/nvidia/dragon/proprietary/vendor/firmware/cros-pd/dingdong_v1.7.575-96b74f1.bin:root/vendor/firmware/cros-pd/dingdong_v1.7.575-96b74f1.bin \
     vendor/nvidia/dragon/proprietary/vendor/firmware/cros-pd/dingdong_v1.7.684-69498dd.bin:root/vendor/firmware/cros-pd/dingdong_v1.7.684-69498dd.bin \
