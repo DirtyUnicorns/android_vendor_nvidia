@@ -24,8 +24,6 @@ PRODUCT_PACKAGES += \
 # Nvidia blob(s) necessary for Dragon hardware
 PRODUCT_COPY_FILES := \
     vendor/nvidia/dragon/proprietary/etc/sysconfig/nexus.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/nexus.xml \
-    vendor/nvidia/dragon/proprietary/lib/libkeymaster_staging.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libkeymaster_staging.so \
-    vendor/nvidia/dragon/proprietary/lib64/libkeymaster_staging.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libkeymaster_staging.so \
     vendor/nvidia/dragon/proprietary/product/etc/permissions/privapp-permissions-dragon.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-dragon.xml \
     vendor/nvidia/dragon/proprietary/product/etc/permissions/privapp-permissions-google.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-google.xml \
     vendor/nvidia/dragon/proprietary/product/etc/permissions/privapp-permissions-pixel.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-pixel.xml \
