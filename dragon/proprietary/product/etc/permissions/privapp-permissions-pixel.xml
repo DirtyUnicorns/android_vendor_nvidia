@@ -65,6 +65,10 @@
         <permission name="android.permission.STOP_APP_SWITCHES"/>
     </privapp-permissions>
 
+    <privapp-permissions package="com.google.android.GoogleCamera">
+        <permission name="android.permission.BIND_WALLPAPER"/>
+    </privapp-permissions>
+
     <privapp-permissions package="com.google.android.as">
         <permission name="android.permission.CAPTURE_AUDIO_OUTPUT"/>
         <permission name="android.permission.CAPTURE_MEDIA_OUTPUT"/>
