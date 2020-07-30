@@ -14,6 +14,7 @@
 
 # Prebuilt APKs
 PRODUCT_PACKAGES += \
+    GoogleCameraPixelC \
     UserInfoWidget
 
 # Prebuilt privileged APKs
